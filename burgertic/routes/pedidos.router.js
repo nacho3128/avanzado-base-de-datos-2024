@@ -19,4 +19,9 @@ router.put("/:id/comenzar", verifyToken, verifyAdmin, PedidosController.comenzar
 router.put("/:id/entregar", verifyToken, verifyAdmin, PedidosController.entregarPedido);
 router.delete("/:id", verifyToken, verifyAdmin,PedidosController.deletePedido);
 
+<<<<<<< Updated upstream
 export default router;
+=======
+
+export default router;
+>>>>>>> Stashed changes
