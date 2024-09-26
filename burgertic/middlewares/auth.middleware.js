@@ -25,7 +25,7 @@ export const verifyToken = async (req, res, next) => {
         }
         const token = tokenParts[1];
         try{
-            const secret="Aguante River"
+            const secret="nachitobarre"
             const decoded = jwt.verify(token,secret)
             const id=decoded.id
             const usuario=UsuariosService.getUsuarioById(id)
