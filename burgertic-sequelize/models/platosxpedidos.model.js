@@ -1,8 +1,8 @@
 import { DataTypes, Model } from "sequelize";
 import { sequelize } from "../db.js";
 
-export class platoxpedido extends Model{}
-platoxpedido.init(
+export class Platoxpedido extends Model{}
+Platoxpedido.init(
     {
         id:{
             type: DataTypes.INTEGRER,
