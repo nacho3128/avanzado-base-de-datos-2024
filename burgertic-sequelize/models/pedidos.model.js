@@ -12,13 +12,19 @@ Pedido.init(
         },
         id_usuario:{
             type: DataTypes.INTEGRER,
-            foreignKey: true,
+          
         },
         fecha:{
             type: DataTypes.DATE,
         },
         estado:{
             type: DataTypes.STRING,
-        }
+        },
+    },
+    {
+        sequelize,
+        modelName: "pedidos",
+        timestamps: false,
     }
+    
 )

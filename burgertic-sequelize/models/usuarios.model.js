@@ -23,5 +23,10 @@ Usuario.init(
         admin:{
             type: DataTypes.BOOLEAN,
         }
+    },
+    {
+        sequelize,
+        modelName: "platos",
+        timestamps: false,
     }
 )
