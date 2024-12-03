@@ -1,7 +1,14 @@
 import { Pedido } from "../models/pedidos.model.js";
 import { Plato } from "../models/platos.model.js";
-import { PlatoxPedido } from "../models/pedidoXplatos.model.js";
 
+import { Usuario } from "../models/usuarios.model.js";
+
+import { sequelize } from "../db.js";
+
+Plato.belongsTo(Usuario)
+Plato.belongsToMany(Pedido,{through:"Platosxpedido"})
+Pedido.belongsToMany(Plato,{through:"Platosxpedido"})
+await sequelize.sync({force:true})
 
 /* const getPlatosByPedido = async (idPedido) => {
     const client = new Client(config);

@@ -6,7 +6,7 @@ export class Usuario extends Model{}
 Usuario.init(
     {
         id:{
-            type: DataTypes.INTEGRER,
+            type: DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey: true,
         },

@@ -5,16 +5,16 @@ export class Platoxpedido extends Model{}
 Platoxpedido.init(
     {
         id:{
-            type: DataTypes.INTEGRER,
+            type: DataTypes.INTEGER,
             autoIncrement:true,
         },
         cantidad:{
-            type: DataTypes.INTEGRER,
+            type: DataTypes.INTEGER,
         },
     },
     {
         sequelize,
-        modelName: "platos",
+        modelName: "platosxpedidos",
         timestamps: false,
     }
 ) 

@@ -6,12 +6,12 @@ export class Pedido extends Model{}
 Pedido.init(
     {
         id:{
-            type: DataTypes.INTEGRER,
+            type: DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey:true,
         },
         id_usuario:{
-            type: DataTypes.INTEGRER,
+            type: DataTypes.INTEGER,
           
         },
         fecha:{
